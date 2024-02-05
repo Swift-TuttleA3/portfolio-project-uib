@@ -1,41 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio-Projekt</title>
-    <link rel="stylesheet" href="/src/scss/main.scss">
-</head>
-<body>
+    <link rel="stylesheet" href="/src/scss/main.scss" />
+  </head>
+  <body>
     <div class="bg-video">
-        <video class="bg-video__content" autoplay muted loop> <source src="./assets/video/artifacts_-_23761 (720p).mp4" type="video/mp4">
-        </video></div>
-    <header class="container-fluid bg-secondary d-flex flex-column flex-xsm-column flex-sm-row flex-md-row flex-lg-row flex-xl-row">
-       
-        <ul class="nav d-flex flex-column flex-xsm-column flex-sm-row flex-md-row flex-lg-row flex-xl-row">
-            <li class="nav-item">
-                <a class="nav-link active" href="#">about</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">work</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">cv</a>
-            </li>
-        </ul>
-        <ul class="nav d-flex flex-column flex-xsm-column flex-sm-row flex-md-row flex-lg-row flex-xl-row">
-<li class="container"><button></button> </li>
-        </ul>
+      <video class="bg-video__content" autoplay muted loop>
+        <source
+          src="./assets/video/artifacts_-_23761 (720p).mp4"
+          type="video/mp4"
+        />
+      </video>
+    </div>
+    <header
+      class="container-fluid bg-secondary d-flex justify-content-between flex-column flex-xsm-column flex-sm-row flex-md-row flex-lg-row flex-xl-row"
+    >
+      <ul
+        class="nav d-flex flex-column flex-xsm-column flex-sm-row flex-md-row flex-lg-row flex-xl-row"
+      >
+        <li class="nav-item">
+          <a class="nav-link active" href="#">about</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">cv</a>
+        </li>
+      </ul>
+      <ul
+        class="nav d-flex flex-column flex-xsm-column flex-sm-row flex-md-row flex-lg-row flex-xl-row">
+        <li><button type="button" class="btn mybtn">+</button></li>
+        <li><button type="button" class="btn mybtn">-</button></li>
+
+        <!-- If you are using the .btn class on its own, remember to at least 
+        define some explicit :focus and/or :focus-visible styles. -->
+
+      </ul>
     </header>
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h1>Hi, I'm <span class="text-primary">John Doe</span></h1>
-                    <p class="lead">I'm a web developer and designer</p>
-                </div>
-            </div>
+    <section class="vh-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="display-3 mt-5 mb-2">Hi, I'm <span class="self">Robert</span></h1>
+            <p class="lead text-primary">
+              A passionate and experienced salesperson and
+              gardener with a strong interest in technology and programming.
+              After 24 years of working for a prestigious garden center, I
+              decided to pursue a new challenge and enroll in a certified web
+              development course at the DCI Education Institute. I am eager to
+              learn and develop my skills as a full-stack web developer, with a
+              special focus on user experience and front-end design.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
-</body>
+    <section class="vh-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="display-4 mt-5 mb-2">work</h2>
+            <p class="lead text-primary">
+              These are some of my first projects. I am constantly working on new
+              projects and will update this section monthly.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="display-4 mt-5 mb-2">CV</h2>
+            <h3>
+                Education and Qualifications
+            </h3>
+            <p class="lead text-primary">
+                2022 - present: Web Development Course at DCI Education Institute (expected completion in 2024)
+                2002: Gärtnermeister (German certified master gardener) and economist degree
+                1995: Apprenticeship as a gardener at Gärtnerei Prinsler
+            </p>
+            <h3>
+                Work Experience
+            </h3>
+            <p class="lead text-primary">
+                1999 - 2022: Salesperson at Dingers Gartencenter, a prestigious garden market in Germany
+                Responsible for customer service, sales, small team of employees and appretices, inventory management, 
+                enjoyed the craftsmanship and the leadership of other employees, while also learning from others and looking for better, more effective or relaxed solutions.
+                Gained extensive knowledge of high-value gardening products and furniture
+                Completed various professional courses in sales
+                Handled conflict situations and negotiated with suppliers and clients
+            </p>
+                <h3>
+                Skills and Interests
+                </h3>
+                <p class="lead text-primary">
+                    Languages: German (native), English (fluent)
+                    Computer skills: HTML, CSS 
+                     Driving license: Class B
+                     Hobbies: Gardening, reading, coding, cooking, biking, hiking and playing computer
+                </p>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

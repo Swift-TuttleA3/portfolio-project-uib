@@ -1,10 +1,97 @@
 $bs-nav-link-color: #fff;
 $bs-nav-link-hover-color: #fff;
 $bs-nav-link-hover-bg: #ffffff7b;
-
-
+$headings-font-family: "Sono", monospace;
+$headings-font-weight: 700;
+$headings-font-style: normal;
+$paragraph-font-family: "Sono", monospace;
+$paragraph-font-weight: 600;
+$paragraph-font-style: normal;
 $primary: #fff;
+$secondary: #463f34;
+$tertiary: #fbf447;
+$quartiary: #ff1e19;
+
 @font-face {
-    font-family: "Rubik Glitch-Regular";
-    src: url();
+    font-family: "Handjet";
+    src: url("../assets/fonts/Handjet/Handjet-VariableFont_ELGR\,ELSH\,wght.ttf");
 }
+@font-face {
+    font-family: "Sono";
+    src: url("../assets/fonts/Sono/Sono-VariableFont_MONO\,wght.ttf");
+}
+
+// <uniquifier>: Use a uniquifier for the class name
+// <weight>: Use a value from 200 to 800
+
+// .sono {
+//     font-family: "Sono", monospace;
+//     font-optical-sizing: auto;
+//     font-weight: 600;
+//     font-style: normal;
+//     font-variation-settings:
+//       "MONO" 1;
+//   }
+
+//   .ubuntu-mono-regular {
+//     font-family: "Ubuntu Mono", monospace;
+//     font-weight: 400;
+//     font-style: normal;
+//   }
+  
+//   .ubuntu-mono-regular-italic {
+//     font-family: "Ubuntu Mono", monospace;
+//     font-weight: 400;
+//     font-style: italic;
+//   }
+  
+//   .ubuntu-mono-bold {
+//     font-family: "Ubuntu Mono", monospace;
+//     font-weight: 700;
+//     font-style: normal;
+//   }
+  
+//   .ubuntu-mono-bold-italic {
+//     font-family: "Ubuntu Mono", monospace;
+//     font-weight: 700;
+//     font-style: italic;
+//   }
+
+// .handjet {
+//     font-family: "Handjet", sans-serif;
+//     font-optical-sizing: auto;
+//     font-weight: 900;
+//     font-style: bold;
+//     font-variation-settings:
+//       "ELGR" 1,
+//       "ELSH" 2;
+//   }
+
+// .noto-sans-<uniquifier> {
+//     font-family: "Noto Sans", sans-serif;
+//     font-optical-sizing: auto;
+//     font-weight: <weight>;
+//     font-style: normal;
+//     font-variation-settings:
+//       "wdth" 100;
+//   }
+
+// .tilt-neon-<uniquifier> {
+//     font-family: "Tilt Neon", sans-serif;
+//     font-optical-sizing: auto;
+//     font-weight: 400;
+//     font-style: normal;
+//     font-variation-settings:
+//       "XROT" 0,
+//       "YROT" 0;
+//   }
+
+// .tilt-prism-<uniquifier> {
+//     font-family: "Tilt Prism", sans-serif;
+//     font-optical-sizing: auto;
+//     font-weight: 400;
+//     font-style: normal;
+//     font-variation-settings:
+//       "XROT" 0,
+//       "YROT" 0;
+//   }
