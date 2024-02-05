@@ -1,0 +1,52 @@
+// Custom.scss
+// Option B: Include parts of Bootstrap
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../../node_modules/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+@import "../assets/fonts/Rubik\ Glitch-Regular.ttf"
+@import "variables";
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+// 4. Include any optional Bootstrap components as you like
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// 5. Add additional custom code here
+
+h1 {
+  color: $primary;
+  font-size: 2rem;
+  font-family: "Rubik Glitch-Regular";
+}
+
+body {
+  background: #000;
+  min-height: calc(100vh - 16px);
+
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  overflow: hidden;
+
+  &__content,
+  img{
+  //   opacity: .2;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+.wrapper {
+  height: 500px;
+  position: relative;
+}
