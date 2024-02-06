@@ -1,12 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio-Projekt</title>
-    <link rel="stylesheet" href="../src/styles/main.scss">
-</head>
-<body>
-    <h1>Hello Portfolio-Projekt</h1>
-</body>
+    <link rel="stylesheet" href="/src/scss/main.scss" />
+  </head>
+    <!-- <div class="bg-video">
+      <video class="bg-video__content" autoplay muted loop>
+        <source
+          src="./assets/video/artifacts_-_23761 (720p).mp4"
+          type="video/mp4" aria-label="Video of a whitenoise as background"
+        />
+      </video>
+    </div> -->
+    <header
+      class="container-fluid bg-secondary d-flex justify-content-between flex-column flex-xsm-column flex-sm-row flex-md-row flex-lg-row flex-xl-row"
+    >
+      <ul
+        class="nav d-flex flex-column flex-xsm-column flex-sm-row flex-md-row flex-lg-row flex-xl-row"
+      >
+        <li class="nav-item">
+          <a class="nav-link active" href="#about">about</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#work">work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#CV">cv</a>
+        </li>
+      </ul>
+    </header>
+      <section class="container vh-100">
+            <h3 id="about" class="display-3 mt-6 mb-3 pt-5 pb-3">
+              Hi, I'm
+              <span class="text-to-image self"
+                >Robert<span id="me"
+                  ><img
+                    src="../src/assets/img/privat (107).jpg"
+                    alt="Profilbild" />
+                    </span>
+                  </span>
+            </h3>
+            <p class="text-primary">
+              A passionate and experienced
+              <span class="text-to-image self"
+                >salesperson and gardener
+                <span id="past">
+                  <img
+                    src="../src/assets/img/privat (63).jpg"
+                    alt="Picture of a working gardener"
+                  />
+                </span>
+              </span>
+              with a strong interest in technology and programming. After 24
+              years of working for a prestigious garden center, I decided to
+              pursue a new challenge and enroll in a certified web development
+              course at the DCI Education Institute. I am eager to learn and
+              develop my skills as a full-stack web developer, with a special
+               interest in user experience and front-end design.
+            </p>
+            <p>Feel free to explore and leave a <span class=""><a href="#contact.html">comment.</a></span></p>
+      </section>
+      <section class="container vh-100">
+        <h2 class="display-4 mt-5 mb-2 p-4" id="work">work</h2>
+         <p class="text-primary">
+            These are some of my first projects. I am constantly working on
+            new projects and will update this section monthly.
+         </p>
+            <div class="worklinks container fluid d-flex justify-content-between mt-5 pt-3">
+                <a href="https://github.com/Swift-TuttleA3/project-dci-orientierung" target="_blank" rel="noopener">
+                  <img class="img-fluid"
+                    src="../src/assets/img/sc-gh-dci-orientierung.png"
+                    alt="Link and picture of a github repository"
+                  />
+                </a>
+                <a href="https://github.com/Swift-TuttleA3/project-javascript-rpg" target="_blank" rel="noopener">
+                  <img class="img-fluid"
+                    src="../src/assets/img/sc-gh-js-rpg.png"
+                    alt="Link and picture of a github repository"
+                  />
+                </a>
+                <a href="#" target="_blank" rel="noopener">
+                  <img class="img-fluid"
+                  src="../src/assets/img/privat (63).jpg"
+                  alt="Link and picture of a github repository"
+                  />
+                </a>
+                <a href="#" target="_blank" rel="noopener">
+                  <img class="img-fluid"
+                    src="../src/assets/img/privat (63).jpg"
+                    alt="Picture of a working gardener"
+                  />
+                </a>
+              </div>
+        </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="display-4 mt-5 mb-2" id="CV">CV</h2>
+            <h3>Education and Qualifications</h3>
+            <p class="text-primary">
+              2022 - present: Web Development Course at DCI Education Institute
+              (expected completion in 2024) 2002: Gärtner Meister (German
+              certified master gardener) and economist degree 1995:
+              Apprenticeship as a gardener at Gärtnerei Prinsler
+            </p>
+            <h3>Work Experience</h3>
+            <p class="text-primary">
+              1999 - 2022: Salesperson at Dingers Gartencenter, a prestigious
+              garden market in Germany Responsible for customer service, sales,
+              small team of employees and appretices and inventory management.
+              Enjoyed the craftsmanship and the leadership of other employees,
+              while also learning from others and looking for better, more
+              effective or relaxed solutions. Gained extensive knowledge of
+              high-value gardening products and furniture Completed various
+              professional courses in sales Handled conflict situations and
+              negotiated with suppliers and clients
+            </p>
+            <h3>Skills and Interests</h3>
+            <p class="text-primary">
+              Languages: German (native), English (fluent) Computer skills:
+              HTML, CSS Driving license: Class B Hobbies: Gardening, reading,
+              coding, cooking, biking, hiking and playing computer
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="container-fluid bg-secondary mt-5 mb-0">
+      <div class="container-fluid">
+         <form class="container text-center text-primary p-4" action="https://wiki.selfhtml.org/wiki/Spezial%3ASuche">
+          <label for="suche">Externe Suche auf selfhtml.org: </label>
+          <input type="search" id="suche" name="search" />
+          <button class="btn btn-outline-light mybtn" type="submit" name="fulltext" value="1">Finden</button>
+        </form>
+      </div>
+      <div class="container-fluid">
+          <p class="text-center text-primary fs-6">
+            © 2024 Robert Panek. All rights reserved. <a href="impressum.html">Privacy Policy</a>
+          </p>
+        </div>
+    </footer>
+  </body>
 </html>

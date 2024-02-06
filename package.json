@@ -4,18 +4,20 @@
   "description": "A template for using Parcel with Sass and Bootstrap",
   "scripts": {
     "start": "rimraf dev-server && parcel src/index.html --dist-dir dev-server --open",
-    "build": "rimraf dist && parcel build src/index.html --out-dir dist --public-url ./",
+    "build": "rimraf dist && parcel build src/index.html --dist-dir build",
     "publish": "gh-pages -d dist"
   },
   "author": "Robert Panek",
   "license": "MIT",
   "dependencies": {
+    "@floating-ui/dom": "^1.6.1",
     "bootstrap": "^5.3.2",
     "node": "^21.6.1",
     "sass": "^1.70.0"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.11.0",
+    "gh-pages": "^6.1.1",
     "parcel": "^2.11.0",
     "rimraf": "^5.0.5"
   }
