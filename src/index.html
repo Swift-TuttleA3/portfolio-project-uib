@@ -24,37 +24,27 @@
           <a class="nav-link active" href="#about">about</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">work</a>
+          <a class="nav-link" href="#work">work</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">cv</a>
+          <a class="nav-link" href="#CV">cv</a>
         </li>
       </ul>
-<!--      
-      <ul
-        class="nav d-flex flex-column flex-xsm-column flex-sm-row flex-md-row flex-lg-row flex-xl-row"
-      >
-        <li><button type="button" class="btn mybtn">+</button></li>
-        <li><button type="button" class="btn mybtn">-</button></li>
-      </ul> -->
     </header>
- 
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h1 id="about" class="display-3 mt-5 mb-2">
+      <section class="container vh-100">
+            <h3 id="about" class="display-3 mt-6 mb-3 pt-5 pb-3">
               Hi, I'm
-              <span class="noise-text" id="self"
+              <span class="text-to-image self"
                 >Robert<span id="me"
                   ><img
                     src="../src/assets/img/privat (107).jpg"
                     alt="Profilbild" />
                     </span>
                   </span>
-            </h1>
+            </h3>
             <p class="text-primary">
               A passionate and experienced
-              <span class="noise-text" id="self"
+              <span class="text-to-image self"
                 >salesperson and gardener
                 <span id="past">
                   <img
@@ -68,60 +58,48 @@
               pursue a new challenge and enroll in a certified web development
               course at the DCI Education Institute. I am eager to learn and
               develop my skills as a full-stack web developer, with a special
-              focus on user experience and front-end design.
+               interest in user experience and front-end design.
             </p>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="display-4 mt-5 mb-2">work</h2>
-            <p class="text-primary">
-              These are some of my first projects. I am constantly working on
-              new projects and will update this section monthly.
-            </p>
-            <div class="worklinks container fluid d-flex justify-content-between mt-5">
-            <div class="row">
-              <div class="col-6">
+            <p>Feel free to explore and leave a <span class=""><a href="#contact.html">comment.</a></span></p>
+      </section>
+      <section class="container vh-100">
+        <h2 class="display-4 mt-5 mb-2 p-4" id="work">work</h2>
+         <p class="text-primary">
+            These are some of my first projects. I am constantly working on
+            new projects and will update this section monthly.
+         </p>
+            <div class="worklinks container fluid d-flex justify-content-between mt-5 pt-3">
                 <a href="https://github.com/Swift-TuttleA3/project-dci-orientierung" target="_blank" rel="noopener">
                   <img class="img-fluid"
                     src="../src/assets/img/sc-gh-dci-orientierung.png"
-                    alt="Picture of github repository"
+                    alt="Link and picture of a github repository"
                   />
                 </a>
-            </div>
-            <div class="col-6">
-              <img class="img-fluid"
-                src="../src/assets/img/privat (63).jpg"
-                alt="Picture of a working gardener"
-              />
-          </div>
-        </div>
-            </div>
-            <div class="worklinks container fluid d-flex justify-content-between mt-5">
-        <div class="row">
-          <div class="col-6">
-            <img class="img-fluid"
-              src="../src/assets/img/privat (63).jpg"
-              alt="Picture of a working gardener"
-            />
-          </div>
-          <div class="col-6">
-            <img class="img-fluid"
-              src="../src/assets/img/privat (63).jpg"
-              alt="Picture of a working gardener"
-            />
-          </div>
-        </div>
-            </div>
-      </div>
-    </section>
+                <a href="https://github.com/Swift-TuttleA3/project-javascript-rpg" target="_blank" rel="noopener">
+                  <img class="img-fluid"
+                    src="../src/assets/img/sc-gh-js-rpg.png"
+                    alt="Link and picture of a github repository"
+                  />
+                </a>
+                <a href="#" target="_blank" rel="noopener">
+                  <img class="img-fluid"
+                  src="../src/assets/img/privat (63).jpg"
+                  alt="Link and picture of a github repository"
+                  />
+                </a>
+                <a href="#" target="_blank" rel="noopener">
+                  <img class="img-fluid"
+                    src="../src/assets/img/privat (63).jpg"
+                    alt="Picture of a working gardener"
+                  />
+                </a>
+              </div>
+        </section>
     <section>
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h2 class="display-4 mt-5 mb-2">CV</h2>
+            <h2 class="display-4 mt-5 mb-2" id="CV">CV</h2>
             <h3>Education and Qualifications</h3>
             <p class="text-primary">
               2022 - present: Web Development Course at DCI Education Institute
@@ -151,22 +129,19 @@
         </div>
       </div>
     </section>
-    <footer class="container-fluid bg-secondary mt-5">
-      <div class="row">
-        <div class="col-12">
+    <footer class="container-fluid bg-secondary mt-5 mb-0">
+      <div class="container-fluid">
          <form class="container text-center text-primary p-4" action="https://wiki.selfhtml.org/wiki/Spezial%3ASuche">
           <label for="suche">Externe Suche auf selfhtml.org: </label>
           <input type="search" id="suche" name="search" />
-          <button class="btn btn-outline-light" type="submit" name="fulltext" value="1">Finden</button>
+          <button class="btn btn-outline-light mybtn" type="submit" name="fulltext" value="1">Finden</button>
         </form>
       </div>
-        </div>
-      <div class="row">
-        <div class="col-12">
-          <p class="text-center text-primary ">
+      <div class="container-fluid">
+          <p class="text-center text-primary fs-6">
             © 2024 Robert Panek. All rights reserved. <a href="impressum.html">Privacy Policy</a>
           </p>
         </div>
-      </div>
+    </footer>
   </body>
 </html>
