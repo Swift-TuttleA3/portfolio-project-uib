@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio-Projekt</title>
-    <link rel="stylesheet" href="src/scss/main.scss" />
+    <link rel="stylesheet" href="../src/scss/main.scss" />
   </head>
     <!-- <div class="bg-video">
       <video class="bg-video__content" autoplay muted loop>
@@ -30,21 +30,29 @@
           <a class="nav-link" href="#CV">cv</a>
         </li>
       </ul>
+      <ul
+        class="nav d-flex flex-column flex-xsm-column flex-sm-row flex-md-row flex-lg-row flex-xl-row"
+      >
+      <li></li>
+      </ul>
     </header>
-      <section class="container vh-100">
-            <h3 id="about" class="display-3 mt-6 mb-3 pt-5 pb-3">
+      <section class="container">
+            <h2 id="about" class="display-3 mt-6 mb-3 pt-5 p4">about</h2>
+            <!-- <div class="container-fluid h-25"></div> -->
+            <p class="fs-1 fw-bolder">
               Hi, I'm
-              <span class="text-to-image self"
-                >Robert<span id="me"
-                  ><img
+              <span class="self"
+                >Robert<span id="me">
+                  <img
                     src="../src/assets/img/privat (107).jpg"
                     alt="Profilbild" />
                     </span>
                   </span>
-            </h3>
+            </p>
+            </h2>
             <p class="text-primary">
               A passionate and experienced
-              <span class="text-to-image self"
+              <span class="self"
                 >salesperson and gardener
                 <span id="past">
                   <img
@@ -56,45 +64,61 @@
               with a strong interest in technology and programming. After 24
               years of working for a prestigious garden center, I decided to
               pursue a new challenge and enroll in a certified web development
-              course at the DCI Education Institute. I am eager to learn and
-              develop my skills as a full-stack web developer, with a special
+              course at the <span class="self">DCI Education Institute.<span id="dci-gmaps"><iframe src="https://www.google.com/maps/embed?pb=!4v1707241589872!6m8!1m7!1ss9EcYcaQqJM78HdTCYGbow!2m2!1d51.23051897216915!2d6.803704446986419!3f253.45703377234045!4f12.54434736483941!5f0.7820865974627469" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></span></span> I am eager to learn and
+              develop my skills as a <span class="self">full-stack web developer<span id="far-future"><img src="../src/assets/img/far-future.jpg"></span></span>, with a special
                interest in user experience and front-end design.
             </p>
-            <p>Feel free to explore and leave a <span class=""><a href="#contact.html">comment.</a></span></p>
+            <p>Feel free to explore and leave a <span class="self"><a href="#">comment.</a></span></p>
       </section>
-      <section class="container vh-100">
+      <section class="container">
         <h2 class="display-4 mt-5 mb-2 p-4" id="work">work</h2>
-         <p class="text-primary">
+         <p class="text-primary mb-4">
             These are some of my first projects. I am constantly working on
             new projects and will update this section monthly.
          </p>
-            <div class="worklinks container fluid d-flex justify-content-between mt-5 pt-3">
-                <a href="https://github.com/Swift-TuttleA3/project-dci-orientierung" target="_blank" rel="noopener">
-                  <img class="img-fluid"
-                    src="../src/assets/img/sc-gh-dci-orientierung.png"
-                    alt="Link and picture of a github repository"
-                  />
-                </a>
-                <a href="https://github.com/Swift-TuttleA3/project-javascript-rpg" target="_blank" rel="noopener">
-                  <img class="img-fluid"
-                    src="../src/assets/img/sc-gh-js-rpg.png"
-                    alt="Link and picture of a github repository"
-                  />
-                </a>
-                <a href="https://github.com/Swift-TuttleA3/portfolio-project-uib" target="_blank" rel="noopener">
-                  <img class="img-fluid"
-                  src="../src/assets/img/privat (63).jpg"
-                  alt="Link and picture of a github repository"
-                  />
-                </a>
-                <a href="https://swift-tuttlea3.github.io/portfolio-project-uib/" target="_blank" rel="noopener">
-                  <img class="img-fluid"
-                    src="../src/assets/img/privat (63).jpg"
-                    alt="Link and picture of a github repository"
-                  />
-                </a>
+         <div class="container">
+         <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="https://github.com/Swift-TuttleA3/project-dci-orientierung" target="_blank" rel="noopener">
+                <img class="figure-img img-fluid rounded" src="../src/assets/img/sc-gh-dci-orientierung.png"
+                alt="Link and picture of a github repository"/>
+              <div class="bg-caro-cap carousel-caption d-none d-md-block">  
+                <p>Final project of the Dci orientation course.</p>
               </div>
-        </section>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="https://github.com/Swift-TuttleA3/project-javascript-rpg" target="_blank" rel="noopener">
+              <img class="figure-img img-fluid rounded" src="../src/assets/img/sc-gh-js-rpg.png" class="d-block w-100" alt="...">
+              <div class="bg-caro-cap carousel-caption d-none d-md-block">
+                <p>A little practice game. Text-based RPG using JavaScript.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="https://github.com/Swift-TuttleA3/portfolio-project-uib" target="_blank" rel="noopener">
+              <img class="figure-img img-fluid rounded" src="../src/assets/img/sc-gh-dci-orientierung.png" class="d-block w-100" alt="...">  
+              <div class="bg-caro-cap carousel-caption d-none d-md-block">
+                <p>Github-page containing the source-code of this page.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+         </div>
+            </section>
     <section>
       <div class="container">
         <div class="row">
@@ -144,4 +168,6 @@
         </div>
     </footer>
   </body>
+  <script type="module" src="./js/main.js"></script>
 </html>
+

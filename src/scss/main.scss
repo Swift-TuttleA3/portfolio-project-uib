@@ -13,27 +13,27 @@
 
 // 4. Include any optional Bootstrap components as you like
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/bootstrap/scss/utilities";
+
 
 // 5. Include any custom styles here
 
 h1 {
   position: relative;
-  color: $primary;
+  color: $custom-color-lightgray;
   font-size: 3.2rem;
   font-family: "Sono", sans-serif;
 }
 
 h2 {
-  color: $quartiary;
-  opacity: 0.9;
+  color: $custom-color-lightorange;
   font-size: 2.4rem;
   font-family: "Sono", sans-serif;
-  text-shadow: $tertiary 0 0 5px;
+  text-shadow: 0 0 5px $custom-color-lightgray;
 }
-h3, h4, h5, h6 {
+h3, h4 {
   font-size: 2.2rem;
-  color: $quintiary;
-  opacity: 0.6;
+  color: $custom-color-darkorange;
   font-family: "Sono", sans-serif;
   text-shadow: $tertiary 0 0 5px;
 }
@@ -44,12 +44,12 @@ header {
   opacity: 0.9;
 }
 p {
-  color: $primary;
+  color: $custom-color-offwhite;
   font-size: 2rem;
   font-family: "Sono", sans-serif;
 }
 li {
-  color: $primary;
+  color: $custom-color-lightgrey;
   font-size: 2rem;
   font-family: "Sono", sans-serif;
 }
@@ -61,7 +61,7 @@ body {
   height: auto;
 }
 label {
-  color: $quartiary;
+  color: $custom-color-lightgrey;
   font-size: 2rem;
   font-family: "Sono", sans-serif;
 }
@@ -106,7 +106,7 @@ input {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 0 0 10% 0;
+  border-radius: 15%;
   box-shadow: 1 1 2px 1px $secondary;
   z-index: 100;
   transition: all .3s;
@@ -119,30 +119,41 @@ input {
   top: 60%;
   left: 60%;
   transform: translate(-50%, -50%);
-  border-radius: 0 0 5% 0;
+  border-radius: 15%;
   box-shadow: 1 1 2px 1px $secondary;
   z-index: 100;
   transition: all .3s;
 }
-#future img {
-  width: 150px;
-  height: 150px;
+#dci-gmaps iframe {
+  width: 300px;
+  height: 300px;
   display: none;
   position: fixed;
   top: 40%;
   left: 40%;
   transform: translate(-50%, -50%);
-  border-radius: 0 0 5% 0;
+  border-radius: 15px;
   box-shadow: 1 1 2px 1px $secondary;
   z-index: 100;
   transition: all .3s;
 }
-.text-to-image {
-  border: 5px solid $secondary;
+#far-future img {
+  width: 200px;
+  height: 200px;
+  display: none;
+  position: fixed;
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  box-shadow: 1 1 2px 1px $secondary;
+  z-index: 100;
+  transition: all .3s;
 }
+
 .self {
-  border: 5px solid $secondary;
-  text-shadow: 0 0 5px $tertiary;
+  color: $custom-color-offwhite;
+  text-shadow: 2px 2px 2px $custom-color-darkorange;
 }
 .self:hover {
   cursor: pointer;
@@ -153,15 +164,26 @@ input {
 .self:hover #past img {
   display: inline;
 }
-.worklinks img {
-  width: 300px;
-  height: 300px;
-  border-radius: 15px;
-  box-shadow: 1 1 2px 1px $secondary;
-  transition: all .3s;
+.self:hover #dci-gmaps iframe {
+  display: inline;
+}
+.self:hover #far-future img {
+  display: inline;
+}
+.bg-caro-cap {
+  background-color: $custom-color-midorange;
+  opacity: 0.8;
+  color: $primary;
+  font-family: "Sono", sans-serif;
+  border-radius: 5px;
+  padding: 4px;
+  margin-bottom: 2rem;
   &:hover {
-    transition-property: all;
-    transform: scale(1.1);
-    box-shadow: 1 1 2px 1px $primary;
+    cursor: pointer;
+  }
+  p {
+    color: $primary;
+    font-size: 1.6rem;
+    font-family: "Sono", sans-serif;
   }
 }
