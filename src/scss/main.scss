@@ -20,7 +20,7 @@
 
 h1 {
   position: relative;
-  color: $custom-color-lightgray;
+  color: $custom-color-lighteryellow;
   font-size: 3.2rem;
   font-family: "Sono", sans-serif;
 }
@@ -71,22 +71,23 @@ input {
   font-family: "Sono", sans-serif;
   border-radius: 5px;
 }
-// .bg-video {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   z-index: -999;
-//   overflow: hidden;
+ .bg-video {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   z-index: -999;
+   overflow: hidden;
 
-//   &__content,
-//   img {
-//     opacity: .3;
-//     height: 100%;
-//     width: 100%;
-//     object-fit:cover;
-//     transform: scaleX(-1);
-//   }
-// }
+   &__content{
+     opacity: .3;
+     height: 100%;
+     width: 100%;
+     object-fit:cover;
+     filter: blur(5px);
+   }
+ }
 .mybtn {
   color: $primary;
   border-radius: 5px;
@@ -182,7 +183,7 @@ input {
     cursor: pointer;
   }
   p {
-    color: $primary;
+    color: $custom-color-dark;
     font-size: 1.6rem;
     font-family: "Sono", sans-serif;
   }
