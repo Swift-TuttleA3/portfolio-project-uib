@@ -29,7 +29,10 @@ $custom-color-lightgray: #c2bfa0;
     font-family: "Sono";
     src: url("../assets/fonts/Sono/Sono-VariableFont_MONO\,wght.ttf");
 }
-
+@font-face {
+    font-family: "Silkscreen-Regular";
+    src: url("../assets/fonts/Silkscreen-Regular.ttf");
+}
 // <uniquifier>: Use a uniquifier for the class name
 // <weight>: Use a value from 200 to 800
 
